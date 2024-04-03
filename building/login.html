@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="assets/img/png-clipart-building-logo-building-building-text-thumbnail-removebg-preview.png" type="image/png">
+
+    <title>SmartBuild</title>
+    <style>
+        #submit {
+            border: 5px solid;
+            height: 50%;
+            width: 18%;
+            font-size: 20px;
+            background-color: rgba(60, 80, 150, 1);
+            color: white;
+        }
+
+        #ground {
+            padding-bottom: 100px;
+        }
+        #page input[type="text"],
+        #page input[type="password"] {
+            font-size: 18px; /* Adjust the font size as needed */
+        }
+
+        
+    </style>
+</head>
+<body style="background:url(images/Residential-building.jpg); bacKground-repeat: norepeat; background-size: cover;">
+    <p id="ground">
+        <center style="margin-top: 200px;">
+
+            <br>
+            <form action="dashboard.php" method="post" style="border-radius: 5px;
+            background-color: rgba(0,0,0,0.5);
+             padding: 36px 24px;
+             width: 351px;
+             height: 138px;">
+                  <h2 style="color:white;margin-top: -12px;">SmartBuilding</h2>
+                  <div id="page" style="color:white;">
+                    Username:<input type="text" name="username"><br><br>
+                    Password: <input type="password" name="password"><br><br>
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </center>
+    </p>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/png-clipart-building-logo-building-building-text-thumbnail-removebg-preview.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            cursor: pointer;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .dashboard-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 200px;
+        }
+        .dashboard-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .profile-card {
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+  .profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    ;
+  }
+
+  .profile-details {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: flex;
+  }
+  .driver-details {
+    margin-top: 30px;
+  }
+
+  .driver-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .driver-info {
+    font-size: 14px;
+  }
+  .submit-button {
+    background-color: #333 ;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%
+  }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="D:\build.jpg" alt="Transportzz Logo">
+            <h1>SmartBuilding</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="AdminPage.jsp" style="text-decoration: none">Home</a></li>
+            <li><a href="Login.jsp" style="text-decoration: none">Logout</a></li>
+        </ul>
+    </div>
+    <div class="profile-card">
+        <div class="profile-header">
+          <img class="profile-photo" src="D:\plumbing.jpg" alt="Profile Photo">
+          <div class="profile-name">Issue Details</div>
+        </div>
+        <div class="profile-details">
+          <h5>Name:karthik</h5>
+          <h5>Block:A-Block</h5>
+          <h5>Floor:2</h5>
+          <h5>Door.no:A-202</h5>
+          <h5>Issue Type:Plumbing</h5>
+          <h5>Issue:Leakage</h5>
+          <h5>Repeated issue:No</h5>
+          <h5>Work Requirement:Replacement</h5>
+          <h5>Date.of.Report:21/08/2023</h5>
+          <h5>Mobile.no:8688861400</h5>
+          
+          <br>
+          <button type="submit" >Next</a></button>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="assets/img/png-clipart-building-logo-building-building-text-thumbnail-removebg-preview.png" type="image/png">
+<title>Admin Dashboard</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f5f5f5;
+}
+
+header {
+background-color: #333;
+color: white;
+padding: 10px;
+text-align: center;
+}
+
+nav {
+background-color: #4444;
+color: white;
+padding: 10px;
+text-align: center;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+display: inline;
+margin-right: 20px;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+main {
+padding: 20px;
+}
+
+section {
+margin-bottom: 30px;
+padding: 20px;
+border: 1px solid #ddd;
+background-color: white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section h2{
+text-align: center;
+}
+h2 {
+margin-top: 0;
+}
+</style>
+</head>
+<body>
+<header>
+<h1> Welcome Admin</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="AddManager.jsp">Add Manager</a></li>
+<li><a href="AddStaf.jsp">Add Employee</a></li>
+<li><a href="AddUser.jsp">Add </a></li>
+<li><a href="AdminViewComplainta.jsp">Complaints</a></li>
+<li><a href="EmployeeDetails.jsp">Employee Details</a></li>
+<li><a href="AdminProfile.jsp">My Profile</a></li>
+<li><a href="Login.jsp">Logout</a></li>
+</ul>
+</nav>
+
+<main>
+<section id="facade">
+<h2><li><a href="AdminFacade.jsp">Facade</a></li></h2>
+
+</section>
+
+<section id="blocks">
+<h2><li><a href="AdminAddblock.jsp">Blocks</a></li></h2>
+
+</section>
+
+<section id="landscaping">
+<h2>Landscaping and Gardening</h2>
+
+</section>
+
+<section id="security">
+<h2><li><a href="AdminSecurity.jsp">Security Features</a></li></h2>
+
+</section>
+
+<section id="fire">
+<h2><li><a href="AdminFire.jsp">Fire Safety</a></li></h2>
+
+</section>
+
+<section id="parking">
+<h2>Parking Area</h2>
+
+</section>
+
+<section id="residents">
+<h2>Residents</h2>
+
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Your Dashboard. All rights reserved.</p>
+
+
+</footer>
+</body>
+</html>

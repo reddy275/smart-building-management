@@ -1,0 +1,118 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/png-clipart-building-logo-building-building-text-thumbnail-removebg-preview.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBuilding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        main {
+            padding: 5px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h5{
+            text-align: center;
+        }
+        h5 {
+            margin-top: 0;
+        }
+        .hi{
+            text-align:end;
+        }
+        .ab{
+            display: flex;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SmartBuilding</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="Login.jsp">Home</a></li>
+            <li><a href="AddMAnager.jsp">Add Manager</a></li>
+            <li><a href="AddStaf.jsp">Add staff</a></li>
+            <li><a href="AdminViewComplaints.jsp">Complaints</a></li>
+            <li><a href="EmployeeDetails.jsp">Employee details</a></li>
+            <li><a href="AdminProfile.jsp">My Profile</a></li>
+            <li><a href="Login.jsp">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="complaint">
+            <h5>Name:karthik</h5>
+            <h5>Block:A-Block</h5>
+            <h5>Floor:2 </h5>
+            <h5>Issue Type:Plumbing-Leakage</h5>
+            <h5>Date:21/08/2023</h5>
+            <h5 class="hi">Status:Pending</h5>
+            <li><a href="MissueDetails.jsp">Details</a></li>
+        </section>
+        
+        <section id="complaint">
+            <h5>Name:Shashi</h5>
+            <h5>Block:B-Block</h5>
+            <h5>Floor:1</h5>
+            <h5>Issue Type:Electrician-Fuse</h5>
+            <h5>Date:31/08/2023</h5>
+            <h5 class="hi">Status:Pending</h5>
+             <li><a href="MissueDetails.jsp">Details</a></li></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Dashboard. All rights reserved.</p>
+    
+    </footer>
+</body>
+</html>
+
+    

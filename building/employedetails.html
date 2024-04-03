@@ -1,0 +1,187 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/png-clipart-building-logo-building-building-text-thumbnail-removebg-preview.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Buttons Example</title>
+    <style>
+        .employee-table {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .employee-table h3 {
+            margin-top: 0;
+        }
+
+        .employee-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .employee-table th, .employee-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .employee-table th {
+            background-color: #f2f2f2;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-icon {
+            font-size: 20px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .search-input {
+            border: none;
+            padding: 5px;
+        }
+
+        .hamburger {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .menu-items {
+            display: none;
+            position: absolute;
+            background-color: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+            left: 0;
+            top: 40px;
+            cursor: pointer;
+        }
+
+        .show-menu {
+            display: block !important;
+        }
+
+        .add-button,
+        .remove-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+          
+        }
+
+        .remove-button {
+            background-color: #f44336;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.querySelector(".hamburger");
+            const menuItems = document.querySelector(".menu-items");
+
+            hamburger.addEventListener("click", function() {
+                menuItems.classList.toggle("show-menu");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <span class="hamburger">&#8801;</span>
+            <div class="menu-items">
+                <div>Home</div><br>
+                <div>Add Manager</div></br>
+                <div>Add Staff</div><br>
+                <div>Complaints</div><br>
+                <div>My profile</div><br>
+                <div>Logout</div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+        <div>
+            <button class="add-button">Add</button>
+            <button class="remove-button">Remove</button>
+            
+        </div>
+    </header>
+    
+
+    <main>
+        <!-- Your main content goes here -->
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+</body>
+</html>
+<div class="employee-table">
+    <h3>Employee Details</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>s.no</th>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Designation</th>
+          <th>Block</th>
+          <th>Mob.no</th>
+          <th>Active/Deactive</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Employee data rows will be added dynamically using JavaScript -->
+        <tr>
+          <td>1</td>
+          <td>Monisha</td>
+          <td>EL123</td>
+          <td>Manager</td>
+          <td>A Block</td>
+          <td>9676224970</td>
+          <td>active</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
